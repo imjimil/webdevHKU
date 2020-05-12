@@ -28,3 +28,16 @@
     margin: 0px;
     color: #0f0f0f;
 }
+
+.our-history {
+    padding-bottom: 80px;
+}
+
+.body {
+    padding: 50px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background: #512dab;
+}
