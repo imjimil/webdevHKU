@@ -355,7 +355,15 @@
                         $("#carouselbutton").children("span").addClass('fa-pause');                    
                     }
                 });
-            })
+
+                $("#reservationButton").click(function(){
+                    $("#reservationModal").modal('toggle');
+                });
+            
+                $("#loginLink").click(function(){
+                    $("#loginModal").modal('toggle');
+                });
+                });
         </script>
 </body>
 
