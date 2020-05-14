@@ -6,19 +6,19 @@ $background-pale: #D1C4E9;
 // Height variables
 $carousel-item-height: 300px;
 
-@mixin zero-margin($pad-up-dn, $pad-left-right) {
-	margin:0px auto;
-	padding: $pad-up-dn $pad-left-right;
+@mixin zero-margin($padding-up-dn, $padding-left-right){
+margin: 0px auto;
+padding: $padding-up-dn $padding-left-right;
 }
 
 .row-header{
-    @include zero-margin(0px,0px);
+    @include zero-margin(0px, 0px);
 }
 
-.row-content {
-    @include zero-margin(50px,0px);
+.row-content{
+    @include zero-margin(50px, 0px);
     border-bottom: 1px ridge;
-    min-height:400px;
+    min-height: 400px;
 }
 
 .footer{
@@ -26,28 +26,28 @@ $carousel-item-height: 300px;
     @include zero-margin(20px, 0px);
 }
 
-.jumbotron {
-    @include zero-margin(70px,30px);
-    background: $background-light ;
-    color:floralwhite;
+.jumbotron{
+    @include zero-margin(70px, 30px);
+    background: $background-light;
+    color: floralwhite;
 }
 
 address{
     font-size:80%;
-    margin:0px;
-    color:#0f0f0f;
+    margin: 0px;
+    color: #0f0f0f;
 }
 
 body{
-    padding:50px 0px 0px 0px;
-    z-index:0;
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
 }
 
-.navbar-dark {
-     background-color: $background-dark;
+.navbar-dark{
+    background-color: $background-dark;
 }
 
-.tab-content {
+.tab-content{
     border-left: 1px solid $lt-gray;
     border-right: 1px solid $lt-gray;
     border-bottom: 1px solid $lt-gray;
@@ -67,10 +67,26 @@ body{
         }
     }
 }
-
 #carouselbutton {
     right:0px;
     position: absolute;
     bottom: 0px;
-    z-index: 1;
+}
+
+.modal-header {
+    background: $background-dark;
+    color: floralwhite;
+
+    .close {
+        background: $background-dark;
+        color: floralwhite;
+    }
+}
+
+.modal-body {
+    background: $background-pale;
+}
+
+.modal-footer {
+    background: $background-light;
 }
