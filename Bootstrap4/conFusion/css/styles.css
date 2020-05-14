@@ -63,3 +63,9 @@
     left: 0;
     min-height: 300px;
 }
+
+#carouselbutton {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}
